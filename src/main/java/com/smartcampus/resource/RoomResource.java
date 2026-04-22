@@ -11,18 +11,6 @@ import java.util.*;
 
 /**
  * RoomResource.java - Part 2: Room Management.
- *
- * Handles all HTTP requests under /api/v1/rooms
- *
- * Endpoints provided:
- *   GET    /api/v1/rooms          - list all rooms
- *   POST   /api/v1/rooms          - create a new room
- *   GET    /api/v1/rooms/{roomId} - get one room by ID
- *   DELETE /api/v1/rooms/{roomId} - delete a room (blocked if sensors still assigned)
- *
- * @Path("/rooms")   - maps this class to the /rooms path
- * @Produces(JSON)   - all responses will be JSON
- * @Consumes(JSON)   - we only accept JSON request bodies
  */
 @Path("/rooms")
 @Produces(MediaType.APPLICATION_JSON)
