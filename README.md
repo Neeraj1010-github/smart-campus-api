@@ -33,7 +33,7 @@ All data is stored in-memory using `ConcurrentHashMap` and `ArrayList`. No datab
 
 | Technology | Purpose |
 |---|---|
-| Java 11 | Language |
+| Java 11 or higher| Language |
 | JAX-RS (Jersey 3.1) | REST framework |
 | Apache Tomcat 10 | Servlet container |
 | Jackson | JSON serialisation |
