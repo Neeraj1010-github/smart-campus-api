@@ -6,10 +6,6 @@ import java.util.List;
 /**
  * Room.java - Data model representing a physical room on campus.
  *
- * This is a POJO (Plain Old Java Object) - it just holds data.
- * Jackson (our JSON library) uses the getters/setters to automatically
- * convert this object to/from JSON when the API sends or receives data.
- *
  * Example JSON representation:
  * {
  *   "id": "LIB-301",
