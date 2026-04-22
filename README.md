@@ -334,5 +334,5 @@ smart-campus-api/
         │   └── context.xml
         └── WEB-INF/
             └── web.xml
-        └── web.xml
+        
 ```
