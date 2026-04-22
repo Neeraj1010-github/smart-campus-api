@@ -10,15 +10,6 @@ import java.util.logging.Logger;
 
 /**
  * RoomNotEmptyExceptionMapper.java - Part 5.1: Maps RoomNotEmptyException to HTTP 409.
- *
- * @Provider tells JAX-RS/Jersey to automatically register this class.
- * Implements ExceptionMapper<RoomNotEmptyException> means: whenever a
- * RoomNotEmptyException is thrown anywhere in the application, JAX-RS
- * will call this class's toResponse() method instead of showing a stack trace.
- *
- * HTTP 409 Conflict = the request conflicts with the current state of the server.
- * In this case: you want to delete the room, but it conflicts with the fact
- * that sensors are still assigned to it.
  */
 @Provider
 public class RoomNotEmptyExceptionMapper implements ExceptionMapper<RoomNotEmptyException> {
