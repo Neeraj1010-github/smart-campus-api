@@ -15,20 +15,16 @@ import java.util.concurrent.ConcurrentHashMap;
  * WHY A SINGLETON?
  * By default, JAX-RS creates a brand new instance of each resource class
  * (e.g. RoomResource, SensorResource) for every incoming HTTP request.
- * This means we cannot store data as fields inside resource classes -
- * the data would be lost after each request!
+ * This means we can't store data inside fields in resource classes
  *
- * The solution is this Singleton: one single DataStore instance is created
- * when the server starts, and every resource class calls DataStore.getInstance()
- * to get the same shared object. All data persists for the lifetime of the server.
+
  *
- * WHY ConcurrentHashMap instead of HashMap?
+ * 
  * Multiple HTTP requests can arrive at the same time (concurrently).
  * A regular HashMap is not thread-safe - simultaneous reads and writes
  * can cause data corruption or crashes. ConcurrentHashMap handles this safely.
  *
- * NOTE: All data is lost when the server stops (no database is used,
- * as per the coursework specification).
+ * 
  */
 public class DataStore {
 
