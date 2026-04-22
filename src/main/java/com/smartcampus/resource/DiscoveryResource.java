@@ -16,13 +16,6 @@ import java.util.Map;
  * This endpoint acts as the "front door" of the API. It returns metadata
  * about the API including version info, contact details, and hypermedia
  * links to the main resource collections (HATEOAS).
- *
- * HATEOAS (Hypermedia as the Engine of Application State) means we include
- * links in our responses so clients can discover what they can do next,
- * rather than having to read static documentation.
- *
- * @Path("/") maps this to the root of our API base path (/api/v1)
- * @Produces(MediaType.APPLICATION_JSON) means all responses are JSON
  */
 @Path("/")
 @Produces(MediaType.APPLICATION_JSON)
