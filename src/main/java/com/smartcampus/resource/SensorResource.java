@@ -13,7 +13,6 @@ import java.util.stream.Collectors;
 /**
  * SensorResource.java - Part 3 & 4: Sensor Operations and Sub-Resource Locator.
  *
- * Handles all HTTP requests under /api/v1/sensors
  *
  * Endpoints provided:
  *   GET  /api/v1/sensors              - list all sensors (with optional ?type= filter)
