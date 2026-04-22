@@ -19,7 +19,7 @@ public class Room {
     // Unique identifier for the room, e.g. "LIB-301"
     private String id;
 
-    // Human-readable name, e.g. "Library Quiet Study"
+    // Readable name, e.g. "Library Quiet Study"
     private String name;
 
     // Maximum number of people allowed in the room
