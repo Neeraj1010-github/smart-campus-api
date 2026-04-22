@@ -88,6 +88,7 @@ curl -X GET http://localhost:8080/smart-campus-api/api/v1 \
 {
   "api": "Smart Campus Sensor & Room Management API",
   "version": "1.0.0",
+  "description": "RESTful API for managing campus rooms and IoT sensors.",
   "contact": "admin@smartcampus.ac.uk",
   "status": "operational",
   "_links": {
@@ -163,7 +164,7 @@ curl -X DELETE http://localhost:8080/smart-campus-api/api/v1/rooms/LIB-301 \
 {
   "status": 409,
   "error": "Conflict",
-  "message": "Cannot decommission room 'LIB-301'. It still has 2 sensor(s) assigned.",
+  "message": "Cannot decommission room 'LIB-301'. It still has 2 sensor(s) assigned: [TEMP-001, CO2-001]",
   "hint": "Remove or reassign all sensors from the room before decommissioning it."
 }
 ```
@@ -334,5 +335,4 @@ smart-campus-api/
         │   └── context.xml
         └── WEB-INF/
             └── web.xml
-        
 ```
