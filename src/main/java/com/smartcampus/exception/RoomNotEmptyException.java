@@ -9,7 +9,8 @@ package com.smartcampus.exception;
  * This exception is caught by RoomNotEmptyExceptionMapper which converts it
  * to an HTTP 409 Conflict response with a descriptive JSON error body.
  *
- * We extend RuntimeException so we don't need to declare it in method signatures.
+ * We extend RuntimeException so we don't need to declare it in the method signatures.
+ 
  */
 public class RoomNotEmptyException extends RuntimeException {
 
