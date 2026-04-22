@@ -25,6 +25,6 @@ import jakarta.ws.rs.core.Application;
  */
 @ApplicationPath("/api/v1")
 public class SmartCampusApplication extends Application {
-    // Empty body is fine - Tomcat + Jersey discover everything automatically
+    
     // via the @ApplicationPath annotation and classpath scanning.
 }
