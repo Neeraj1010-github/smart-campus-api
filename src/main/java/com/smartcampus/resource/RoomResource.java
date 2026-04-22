@@ -11,6 +11,7 @@ import java.util.*;
 
 /**
  * RoomResource.java - Part 2: Room Management.
+ 
  */
 @Path("/rooms")
 @Produces(MediaType.APPLICATION_JSON)
