@@ -8,9 +8,6 @@ import java.util.UUID;
  * Every time a sensor records a measurement, a SensorReading is created and
  * stored in the readings history list for that sensor.
  *
- * Posting a new reading also updates the parent Sensor's currentValue field
- * to keep the data consistent across the API.
- *
  * Example JSON representation:
  * {
  *   "id": "a3f7c2d1-...",
