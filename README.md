@@ -329,6 +329,10 @@ smart-campus-api/
     │   │   └── GlobalExceptionMapper.java              # 500 catch-all
     │   └── filter/
     │       └── LoggingFilter.java              # Request & response logging
-    └── webapp/WEB-INF/
+    └── webapp/
+        ├── META-INF/
+        │   └── context.xml
+        └── WEB-INF/
+            └── web.xml
         └── web.xml
 ```
