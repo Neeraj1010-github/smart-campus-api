@@ -13,18 +13,6 @@ import java.util.*;
 /**
  * SensorReadingResource.java - Part 4.2: Historical Sensor Reading Management.
  *
- * This class is NOT registered directly with JAX-RS.
- * It is instantiated by the sub-resource locator in SensorResource
- * when a request comes in for /api/v1/sensors/{sensorId}/readings
- *
- * Notice: this class has NO @Path annotation at the class level.
- * The path context (/api/v1/sensors/{sensorId}/readings) is inherited
- * from the sub-resource locator that created this instance.
- *
- * Endpoints provided (relative to /api/v1/sensors/{sensorId}/readings):
- *   GET  /     - fetch all historical readings for this sensor
- *   POST /     - add a new reading (blocked if sensor is in MAINTENANCE)
- *   GET  /{id} - fetch a specific reading by its ID
  */
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
