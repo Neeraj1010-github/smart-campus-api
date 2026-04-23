@@ -1,6 +1,6 @@
 # Smart Campus Sensor & Room Management API
 
-A RESTful web service built with **JAX-RS (Jersey 3.1)** deployed on **Apache Tomcat 10**. This API manages campus rooms and IoT sensors for the University's Smart Campus initiative.
+A RESTful web API built with **JAX-RS (Jersey 3.1)** deployed on **Apache Tomcat 10**. This API manages campus rooms and IoT sensors for the University's Smart Campus initiative.
 
 ---
 
