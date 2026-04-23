@@ -200,11 +200,11 @@ curl -X GET http://localhost:8080/smart-campus-api/api/v1/sensors/TEMP-001/readi
 
 | Type | ID | Details |
 |---|---|---|
-| Room | `LIB-301` | Library Quiet Study, capacity 50 |
-| Room | `LAB-101` | Computer Science Lab, capacity 30 |
-| Sensor | `TEMP-001` | Temperature, ACTIVE, in LIB-301 |
-| Sensor | `CO2-001` | CO2, ACTIVE, in LIB-301 |
-| Sensor | `OCC-001` | Occupancy, **MAINTENANCE**, in LAB-101 |
+| Room | LIB-301 | Library Quiet Study, capacity 50 |
+| Room | LAB-101 | Computer Science Lab, capacity 30 |
+| Sensor | TEMP-001 | Temperature, ACTIVE, in LIB-301 |
+| Sensor | CO2-001 | CO2, ACTIVE, in LIB-301 |
+| Sensor | OCC-001 | Occupancy, **MAINTENANCE**, in LAB-101 |
 
 ---
 
