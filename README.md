@@ -35,11 +35,10 @@ All data is stored in-memory using `ConcurrentHashMap` and `ArrayList`. No datab
 |---|---|
 | Java 11 or higher| Language |
 | JAX-RS (Jersey 3.1) | REST framework |
-| Apache Tomcat 10 | Servlet container |
+| Apache Tomcat 10 | Server deployed on |
 | Jackson | JSON serialisation |
 | Maven | Build tool |
 
-> **Note:** Spring Boot is NOT used. Only JAX-RS as required.
 
 ---
 
