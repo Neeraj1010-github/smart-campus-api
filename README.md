@@ -204,7 +204,7 @@ curl -X GET http://localhost:8080/smart-campus-api/api/v1/sensors/TEMP-001/readi
 | Room | LAB-101 | Computer Science Lab, capacity 30 |
 | Sensor | TEMP-001 | Temperature, ACTIVE, in LIB-301 |
 | Sensor | CO2-001 | CO2, ACTIVE, in LIB-301 |
-| Sensor | OCC-001 | Occupancy, **MAINTENANCE**, in LAB-101 |
+| Sensor | OCC-001 | Occupancy, MAINTENANCE, in LAB-101 |
 
 ---
 
@@ -257,31 +257,32 @@ A JAX-RS filter is a much cleaner way to handle logging than scattering log stat
 ```
 smart-campus-api/
 ├── pom.xml
+├── nb-configuration.xml
 ├── README.md
-└── src/main/
+└── src/
     ├── java/com/smartcampus/
     │   ├── application/
-    │   │   ├── DataStore.java                  # Singleton in-memory data store
-    │   │   └── SmartCampusApplication.java     # JAX-RS @ApplicationPath config
+    │   │   ├── DataStore.java                  
+    │   │   └── SmartCampusApplication.java    
     │   ├── model/
     │   │   ├── Room.java
     │   │   ├── Sensor.java
     │   │   └── SensorReading.java
     │   ├── resource/
-    │   │   ├── DiscoveryResource.java          # GET /api/v1
-    │   │   ├── RoomResource.java               # /api/v1/rooms
-    │   │   ├── SensorResource.java             # /api/v1/sensors
-    │   │   └── SensorReadingResource.java      # /api/v1/sensors/{id}/readings
+    │   │   ├── DiscoveryResource.java          
+    │   │   ├── RoomResource.java              
+    │   │   ├── SensorResource.java             
+    │   │   └── SensorReadingResource.java      
     │   ├── exception/
     │   │   ├── RoomNotEmptyException.java
-    │   │   ├── RoomNotEmptyExceptionMapper.java        # 409
+    │   │   ├── RoomNotEmptyExceptionMapper.java        
     │   │   ├── LinkedResourceNotFoundException.java
-    │   │   ├── LinkedResourceNotFoundExceptionMapper.java  # 422
+    │   │   ├── LinkedResourceNotFoundExceptionMapper.java  
     │   │   ├── SensorUnavailableException.java
-    │   │   ├── SensorUnavailableExceptionMapper.java   # 403
-    │   │   └── GlobalExceptionMapper.java              # 500 catch-all
+    │   │   ├── SensorUnavailableExceptionMapper.java   
+    │   │   └── GlobalExceptionMapper.java              
     │   └── filter/
-    │       └── LoggingFilter.java              # Request & response logging
+    │       └── LoggingFilter.java              
     └── webapp/
         ├── META-INF/
         │   └── context.xml
