@@ -2,7 +2,9 @@
 
 A RESTful web API built with **JAX-RS (Jersey 3.1)** deployed on **Apache Tomcat 10**. This API manages campus rooms and IoT sensors for the University's Smart Campus initiative.
 
+
 Note: I am using jakarta instead of javax since due to it being renamed to jakarta after it was handed over to Eclipse foundation
+
 ---
 
 ## API Overview
