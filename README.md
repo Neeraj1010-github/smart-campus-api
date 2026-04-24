@@ -167,33 +167,6 @@ curl -X DELETE http://localhost:8080/smart-campus-api/api/v1/rooms/LIB-301 \
   "hint": "Remove or reassign all sensors from the room before decommissioning it."
 }
 ```
-
----
-
-### 8. Post Reading to MAINTENANCE Sensor (403 Forbidden)
-```bash
-curl -X POST http://localhost:8080/smart-campus-api/api/v1/sensors/OCC-001/readings \
-     -H "Content-Type: application/json" \
-     -d '{"value":5.0}'
-```
-
----
-
-### 9. Register Sensor with Invalid roomId (422)
-```bash
-curl -X POST http://localhost:8080/smart-campus-api/api/v1/sensors \
-     -H "Content-Type: application/json" \
-     -d '{"id":"TEMP-000","type":"Temperature","status":"ACTIVE","currentValue":0.0,"roomId":"FAKE-999"}'
-```
-
----
-
-### 10. Get Reading History
-```bash
-curl -X GET http://localhost:8080/smart-campus-api/api/v1/sensors/TEMP-001/readings \
-     -H "Accept: application/json"
-```
-
 ---
 
 ## Pre-seeded Test Data
